@@ -5,6 +5,7 @@ export default function Home() {
   const projects = [
     { name: "smart-robot-manufacturing", href: "/mechanical-arm" },
     { name: "invision-3d-scanner", href: "/solar-tracker" },
+    { name: "husco-international", href: "/husco-international" },
   ];
 
   return (
@@ -71,18 +72,14 @@ export default function Home() {
             </div>
 
             {/* Projects */}
-            <div className="mb-6">
-              <p className="text-gray-500 mb-1"># projects</p>
-              {projects.map((project, index) => (
-                <Link
-                  key={index}
-                  href={project.href}
-                  className="block text-[#00ff41] hover:text-white transition-colors group"
-                >
-                  <span className="text-[#00ff41]/60">&gt;</span>{" "}
-                  <span className="group-hover:underline">./{project.name}</span>
-                </Link>
-              ))}
+            <div>
+              <p className="text-gray-500"># projects</p>
+              <div className="mt-2 space-y-2">
+                {/* render projects explicitly to avoid trailing layout issues */}
+                <Link href="/mechanical-arm" className="block text-[#00ff41]/70 hover:text-[#00ff41]">&gt; smart-robot-manufacturing</Link>
+                <Link href="/solar-tracker" className="block text-[#00ff41]/70 hover:text-[#00ff41]">&gt; invision-3d-scanner</Link>
+                <Link href="/husco-international" className="block text-[#00ff41]/70 hover:text-[#00ff41]">&gt; husco-international</Link>
+              </div>
             </div>
 
             {/* Divider */}

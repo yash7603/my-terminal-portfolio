@@ -38,8 +38,8 @@ export default function HuscoInternational() {
             <div>
               <p className="text-gray-500"># overview</p>
               <div className="mt-2 text-[#00ff41]/80 space-y-2">
-                <p>&gt; mechanical design co-op working on valve actuation and fixture design for automotive systems</p>
-                <p>&gt; responsibilities included conceptual design, FEA/CFD validation, and test fixture development</p>
+                <p>&gt; working on a coolant valve for a major oem — mechanical design engineering co-op focused on valve actuation and test hardware</p>
+                <p>&gt; responsibilities spanned concept generation, hand calculations, fea validation, fixture design, test execution, and drawing pack delivery for manufacturing</p>
               </div>
             </div>
 
@@ -47,31 +47,48 @@ export default function HuscoInternational() {
               <p className="text-gray-500"># key contributions</p>
               <div className="mt-3 space-y-3">
                 <div className="border-l-2 border-[#00ff41]/30 pl-4">
-                  <p className="text-[#00ff41]">&gt; novel valve actuation concepts</p>
-                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">
-                    designed four novel concepts for valve actuation retention methods for a CVTMS module used in BEV applications
-                  </p>
+                  <p className="text-[#00ff41]">&gt; designed and 3d printed an over-mold for an electronic expansion valve</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">produced a show-ready over-mold prototype used at a trade show to demonstrate the module packaging and sealing approach</p>
                 </div>
 
                 <div className="border-l-2 border-[#00ff41]/30 pl-4">
-                  <p className="text-[#00ff41]">&gt; fixtures & testing</p>
-                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">
-                    designed and validated fixtures for valve endurance testing using GD&T, modeling, and fabrication
-                  </p>
+                  <p className="text-[#00ff41]">&gt; concept development & evaluation</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">brainstormed multiple retention and actuation concepts and evaluated them using a pugh (concept selection) matrix to identify the best trade-offs for bev application requirements</p>
                 </div>
 
                 <div className="border-l-2 border-[#00ff41]/30 pl-4">
-                  <p className="text-[#00ff41]">&gt; simulation & validation</p>
-                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">
-                    conducted cfd to reduce pressure drop by ~11% and fea to validate spring response under load
-                  </p>
+                  <p className="text-[#00ff41]">&gt; mechanical design: leaf springs, heat staking, pseudo press-fit, integral shaft</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">designed leaf springs sized from beam-bending calculations, developed heat-stake and pseudo press-fit solutions (intentional yielding within a hex bore), and an integral shaft option</p>
                 </div>
 
                 <div className="border-l-2 border-[#00ff41]/30 pl-4">
-                  <p className="text-[#00ff41]">&gt; system testing</p>
-                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">
-                    devised a full-system torque test plan using a torque transducer and dewesoft to confirm simulation data
-                  </p>
+                  <p className="text-[#00ff41]">&gt; hand calculations & test validation</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">performed hand calculations for feasibility, then ran spring-rate and torque tests; compared physical test data to calculations and iterated designs</p>
+                </div>
+
+                <div className="border-l-2 border-[#00ff41]/30 pl-4">
+                  <p className="text-[#00ff41]">&gt; fea & correlation</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">ran fea simulations to verify stiffness, stress, and mode shapes and to ensure alignment between analytical, simulated, and experimental results</p>
+                </div>
+
+                <div className="border-l-2 border-[#00ff41]/30 pl-4">
+                  <p className="text-[#00ff41]">&gt; fixture design & endurance testing</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">designed and fabricated a stainless-steel fixture using a 5/2 solenoid valve, pwm transmitter, pneumatic rotary actuator and piping to run cycling tests and validate longevity</p>
+                </div>
+
+                <div className="border-l-2 border-[#00ff41]/30 pl-4">
+                  <p className="text-[#00ff41]">&gt; thermal cycling</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">executed thermal cycling per customer specifications to confirm endurance across the required temperature range</p>
+                </div>
+
+                <div className="border-l-2 border-[#00ff41]/30 pl-4">
+                  <p className="text-[#00ff41]">&gt; dfm & supplier readiness</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">designed parts for manufacturability and produced engineering drawings with gd&t to solicit injection-molding quotes from suppliers</p>
+                </div>
+
+                <div className="border-l-2 border-[#00ff41]/30 pl-4">
+                  <p className="text-[#00ff41]">&gt; specialized tooling: leaf spring bender</p>
+                  <p className="text-[#00ff41]/70 mt-1 text-xs leading-relaxed">designed a fixture to accurately bend leaf springs while accounting for elastic spring-back and supplied gd&t drawings so suppliers could machine the tool</p>
                 </div>
               </div>
             </div>
@@ -80,15 +97,7 @@ export default function HuscoInternational() {
             <div>
               <p className="text-gray-500"># tech stack</p>
               <div className="flex flex-wrap gap-2 mt-3 text-sm">
-                {[
-                  "solidworks",
-                  "fea",
-                  "cfd",
-                  "gd&t",
-                  "test fixtures",
-                  "dewesoft",
-                  "torque transducer"
-                ].map((tech) => (
+                {["solidworks","fea","pugh matrix","gd&t","dfm","test fixtures","thermal cycling","pneumatic systems","injection molding","torque transducer"].map((tech) => (
                   <span key={tech} className="px-3 py-1 border border-[#00ff41]/30 text-xs text-[#00ff41]/70 rounded">{tech}</span>
                 ))}
               </div>
@@ -100,12 +109,12 @@ export default function HuscoInternational() {
               <p className="text-gray-600 text-xs mt-1 mb-4">add images to: public/projects/husco-international/</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {[
-                  "photo 1 - full torque test set up",
-                  "photo 2 - leaf spring design",
-                  "photo 3 - heat stake design",
-                  "photo 4 - endurance test set up",
-                  "photo 5 - interference fit design",
-                  "photo 6 - full torque test setup",
+                  "photo 1 - over-mold prototype (trade show)",
+                  "photo 2 - leaf spring layouts & bending fixture",
+                  "photo 3 - heat-stake and pseudo press-fit details",
+                  "photo 4 - endurance cycling fixture (pneumatic actuation)",
+                  "photo 5 - hex bore intentional-yield interference fit",
+                  "photo 6 - torque test instrumentation & data capture"
                 ].map((caption, idx) => {
                   const i = idx + 1;
                   return (

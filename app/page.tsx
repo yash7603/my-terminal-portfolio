@@ -5,7 +5,9 @@ export default function Home() {
   const projects = [
     { name: "smart-robot-manufacturing", href: "/mechanical-arm" },
     { name: "invision-3d-scanner", href: "/solar-tracker" },
+    { name: "andersen-corporation", href: "/andersen-corporation" },
     { name: "husco-international", href: "/husco-international" },
+    { name: "crane-safety-research", href: "/crane-safety-research" },
   ];
 
   return (
@@ -75,10 +77,15 @@ export default function Home() {
             <div>
               <p className="text-gray-500"># projects</p>
               <div className="mt-2 space-y-2">
-                {/* render projects explicitly to avoid trailing layout issues */}
-                <Link href="/mechanical-arm" className="block text-[#00ff41]/70 hover:text-[#00ff41]">&gt; smart-robot-manufacturing</Link>
-                <Link href="/solar-tracker" className="block text-[#00ff41]/70 hover:text-[#00ff41]">&gt; invision-3d-scanner</Link>
-                <Link href="/husco-international" className="block text-[#00ff41]/70 hover:text-[#00ff41]">&gt; husco-international</Link>
+                {projects.map((project) => (
+                  <Link
+                    key={project.href}
+                    href={project.href}
+                    className="block text-[#00ff41]/70 hover:text-[#00ff41]"
+                  >
+                    &gt; {project.name}
+                  </Link>
+                ))}
               </div>
             </div>
 

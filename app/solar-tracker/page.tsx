@@ -40,7 +40,7 @@ export default function InVision3DScanner() {
               <p className="text-gray-500"># overview</p>
               <div className="mt-2 text-[#00ff41]/80 space-y-2">
                 <p>&gt; non-destructive method for mapping load-bearing components behind drywall</p>
-                <p>&gt; replaces invasive "guesswork" with high-confidence 3d spatial data</p>
+                <p>&gt; replaces invasive &quot;guesswork&quot; with high-confidence 3d spatial data</p>
                 <p>&gt; integrates directly into professional architectural workflows</p>
                 <p>&gt; exports to standard cad formats (dwg, sldprt) and bim software</p>
               </div>
@@ -278,8 +278,8 @@ export default function InVision3DScanner() {
           <Link href="/mechanical-arm" className="text-gray-500 hover:text-[#00ff41] transition-colors">
             &lt; smart-robot-manufacturing
           </Link>
-          <Link href="/" className="text-gray-500 hover:text-[#00ff41] transition-colors">
-            home &gt;
+          <Link href="/andersen-corporation" className="text-gray-500 hover:text-[#00ff41] transition-colors">
+            andersen-corporation &gt;
           </Link>
         </div>
       </div>

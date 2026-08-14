@@ -142,8 +142,8 @@ export default function HuscoInternational() {
 
         {/* Navigation */}
         <div className="mt-6 flex justify-between text-sm font-mono">
-          <Link href="/mechanical-arm" className="text-gray-500 hover:text-[#00ff41] transition-colors">&lt; smart-robot-manufacturing</Link>
-          <Link href="/" className="text-gray-500 hover:text-[#00ff41] transition-colors">home &gt;</Link>
+          <Link href="/andersen-corporation" className="text-gray-500 hover:text-[#00ff41] transition-colors">&lt; andersen-corporation</Link>
+          <Link href="/crane-safety-research" className="text-gray-500 hover:text-[#00ff41] transition-colors">crane-safety-research &gt;</Link>
         </div>
       </div>
     </main>
